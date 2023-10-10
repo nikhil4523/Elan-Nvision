@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPON|</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {box-sizing:border-box}
+
+
+        body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, black, #001F3F, #8E44AD);
+   
+}
+        
+
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+  height: 20vw;
+}
+
+.mySlides {
+  display: none;
+}
+
+
+
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.mySlides {
+            display: none;
+            width: 50%; 
+            height: 40%;
+            position: absolute;
+            top: 10%; 
+            left: 20%; 
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: auto;
+        }
+
+        .mySlides:hover {
+            transform: scale(1.05); /* Add a hover effect to scale the image slightly */
+        }
+        .headline {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+
+ h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.headline {
+    font-size: 3rem;
+    margin-left: 30%;
+    color: antiquewhite;
+}
+
+.subheadline {
+    display: flex;
+  margin-top: 5%;
+  margin-left: 30%;
+
+}
+
+</style>
+</head>
+<body>
+  <div class="moving-background">
+
+    
+  
+     
+  
+
+  
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <h1 class="headline"><br>
+          Title sponsor</h1>
+            <img src="R.jpeg" style="width:120% ; height: 30vw;">
+          
+
+        </div>
+      
+        <div class="mySlides fade">
+          <h1 class="headline"><br>
+            Media Partner</h1>
+            <img src="maxresdefault.jpg" style="width:120%; height: 30vw;">
+            
+        </div>
+      
+        <div class="mySlides fade">
+          <h1 class="headline"><br>
+            Food Partner</h1>
+            <img src="e7b6ab528a44270c773cc53e18e4d9f6.jpg" style="width:120% ; height: 30vw;" >
+         
+
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       
+    </div>
+
+
+
+    <div class="flex2" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; padding: 10px;  text-align: center;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="about.html" style="scale: 3;" class="animated-text ">
+    
+            ➱
+            
+            ➱
+            
+            </a>
+    <br>
+
+
+    
+      
+    
+    <script>
+        var slideIndex = 0;
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+           
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+
+        showSlides();
+    </script>
+    </div>
+</body>
+</html>
